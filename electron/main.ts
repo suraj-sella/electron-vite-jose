@@ -3,8 +3,8 @@ import path from 'node:path'
 import crypto from 'node:crypto'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const jose = require('jose'); // this is te only way we get the node dist of jose
-// import * as jose from 'jose' // this is the recommended typescript way of import but it takes browser code so not working  
+// const jose = require('jose'); // this is te only way we get the node dist of jose
+import * as jose from 'jose' // this is the recommended typescript way of import but it takes browser code so not working  
 console.log(jose.cryptoRuntime);
 
 // The built directory structure

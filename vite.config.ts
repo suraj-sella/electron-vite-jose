@@ -23,4 +23,10 @@ export default defineConfig({
       renderer: {},
     }),
   ],
+  resolve: {
+    // For Vite parse `import` path.
+    alias: {
+      jose: 'jose/dist/node/cjs/index.js', // use node.js
+    },
+  },
 })
